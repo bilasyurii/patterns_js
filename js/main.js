@@ -5,6 +5,7 @@ import Prototype from './patterns/creational/prototype.js';
 import Singleton from './patterns/creational/singleton.js';
 import Adapter from './patterns/structural/adapter.js';
 import Bridge from './patterns/structural/bridge.js';
+import Composite from './patterns/structural/composite.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -112,6 +113,7 @@ const patternClasses = [
   // Structural
   Adapter,
   Bridge,
+  Composite,
 ];
 
 const config = {
