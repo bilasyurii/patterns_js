@@ -3,6 +3,8 @@ import FactoryMethod from './patterns/creational/factory-method.js';
 import Builder from './patterns/creational/builder.js';
 import Prototype from './patterns/creational/prototype.js';
 import Singleton from './patterns/creational/singleton.js';
+import Adapter from './patterns/structural/adapter.js';
+import Bridge from './patterns/structural/bridge.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -107,6 +109,9 @@ const patternClasses = [
   Builder,
   Prototype,
   Singleton,
+  // Structural
+  Adapter,
+  Bridge,
 ];
 
 const config = {
