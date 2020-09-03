@@ -1,5 +1,6 @@
 import Playground from './playground.js';
 import FactoryMethod from './patterns/factory-method.js';
+import Builder from './patterns/builder.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -23,6 +24,8 @@ export default class StartPoint {
     
     this._initSelector();
     this._initButtonHandler();
+
+    this._onReady();
   }
 
   _initSelector() {
@@ -69,6 +72,12 @@ export default class StartPoint {
     button.addEventListener('click', () => this._startSelectedPattern());
   }
 
+  _onReady() {
+    if (this._config.reportReady) {
+      console.log('Initialized successfully and ready.');
+    }
+  }
+
   _startSelectedPattern() {
     const current = this._currentPattern;
 
@@ -92,10 +101,12 @@ export default class StartPoint {
 
 const patternClasses = [
   FactoryMethod,
+  Builder,
 ];
 
 const config = {
   reportPatterns: true,
+  reportReady: true,
   reportStartedPatterns: true,
 };
 

@@ -33,7 +33,7 @@ class Monster {
   }
 
   speak() {
-    return new Error('Not implemented: Monster.speak().');
+    throw new Error('Not implemented: Monster.speak().');
   }
 }
 
@@ -67,7 +67,7 @@ class Barracks {
    * @returns {Monster}
    */
   createUnit() {
-    return new Error('Not implemented: Barracks.createUnit().');
+    throw new Error('Not implemented: Barracks.createUnit().');
   }
 }
 
