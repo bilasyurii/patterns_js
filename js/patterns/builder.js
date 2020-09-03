@@ -2,7 +2,7 @@ import Pattern from "../pattern.js";
 
 export default class Builder extends Pattern {
   constructor(playground) {
-    super('Builder', playground)
+    super('Builder', playground);
   }
 
   start() {

@@ -2,7 +2,7 @@ import Pattern from "../pattern.js";
 
 export default class FactoryMethod extends Pattern {
   constructor(playground) {
-    super('Factory Method', playground)
+    super('Factory Method', playground);
   }
 
   start() {
