@@ -2,6 +2,7 @@ import Playground from './playground.js';
 import FactoryMethod from './patterns/factory-method.js';
 import Builder from './patterns/builder.js';
 import Prototype from './patterns/prototype.js';
+import Singleton from './patterns/singleton.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -105,6 +106,7 @@ const patternClasses = [
   FactoryMethod,
   Builder,
   Prototype,
+  Singleton,
 ];
 
 const config = {
