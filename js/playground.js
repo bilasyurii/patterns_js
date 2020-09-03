@@ -12,10 +12,23 @@ export default class Playground {
   }
 
   addParagraph(innerHTML) {
+    const paragraph = this._createParagraph();
+
+    paragraph.innerHTML = innerHTML;
+  }
+
+  emptyParagraph() {
+    const paragraph = this._createParagraph();
+
+    paragraph.classList.add('empty-paragraph');
+  }
+
+  _createParagraph() {
     const domElement = this._domElement;
     const paragraph = document.createElement('p');
 
-    paragraph.innerHTML = innerHTML;
     domElement.append(paragraph);
+
+    return paragraph;
   }
 }

@@ -22,6 +22,10 @@ main {
   align-items: center;
 }
 
+.empty-paragraph {
+  min-height: 1em;
+}
+
 h1 {
   font-size: 4em;
   margin: 0.5em 0;

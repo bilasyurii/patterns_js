@@ -1,5 +1,5 @@
-import TestPattern from './test-pattern.js';
 import Playground from './playground.js';
+import FactoryMethod from './patterns/factory-method.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -82,16 +82,21 @@ export default class StartPoint {
 
     this._currentPattern = newPattern;
 
+    if (this._config.reportStartedPatterns) {
+      console.log(`Started pattern: ${newPattern.name}`);
+    }
+
     newPattern.start();
   }
 }
 
 const patternClasses = [
-  TestPattern,
+  FactoryMethod,
 ];
 
 const config = {
   reportPatterns: true,
+  reportStartedPatterns: true,
 };
 
 document.addEventListener('DOMContentLoaded', () => new StartPoint(patternClasses, config));
