@@ -16,7 +16,7 @@ export default class Builder extends Pattern {
 
   /**
    * @param {Director} director
-   * @param {ComputerBuilder} builder
+   * @param {IComputerBuilder} builder
    */
   buildComputer(director, builder) {
     const computer = director.makeComputer(builder);
@@ -28,7 +28,7 @@ export default class Builder extends Pattern {
 }
 
 // 'interface'
-class ComputerBuilder {
+class IComputerBuilder {
   constructor() {
   }
 
@@ -79,7 +79,7 @@ class Computer {
 }
 
 // concrete builder 1
-class GamingPCBuilder extends ComputerBuilder {
+class GamingPCBuilder extends IComputerBuilder {
   constructor() {
     super();
 
@@ -104,7 +104,7 @@ class GamingPCBuilder extends ComputerBuilder {
 }
 
 // concrete builder 2
-class OfficeLaptopBuilder extends ComputerBuilder {
+class OfficeLaptopBuilder extends IComputerBuilder {
   constructor() {
     super();
 
@@ -132,7 +132,7 @@ class Director {
   constructor() {}
 
   /**
-   * @param {ComputerBuilder} builder 
+   * @param {IComputerBuilder} builder 
    * 
    * @returns {Computer}
    */

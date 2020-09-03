@@ -1,5 +1,4 @@
 import Pattern from "../../pattern.js";
-import Playground from "../../playground.js";
 
 export default class Composite extends Pattern {
   constructor(playground) {
@@ -31,11 +30,8 @@ export default class Composite extends Pattern {
 class IRenderable {
   constructor() {}
 
-  /**
-   * @param {Playground} _playground
-   */
   render(_playground) {
-    throw new Error('Not implemented: IRenderable.render(playground).');
+    throw new Error('Not implemented: IRenderable.render(_playground).');
   }
 }
 

@@ -14,7 +14,7 @@ export default class FactoryMethod extends Pattern {
   }
 
   /**
-   * @param {Barracks} barracks 
+   * @param {IBarracks} barracks 
    */
   spawnUnit(barracks) {
     const unit = barracks.createUnit();
@@ -27,7 +27,7 @@ export default class FactoryMethod extends Pattern {
 }
 
 // 'interface'
-class Monster {
+class IMonster {
   constructor(name) {
     this.name = name;
   }
@@ -38,7 +38,7 @@ class Monster {
 }
 
 // concrete class 1
-class Ogre extends Monster {
+class Ogre extends IMonster {
   constructor() {
     super('Ogre');
   }
@@ -49,7 +49,7 @@ class Ogre extends Monster {
 }
 
 // concrete class 2
-class Troll extends Monster {
+class Troll extends IMonster {
   constructor() {
     super('Troll')
   }
@@ -60,11 +60,11 @@ class Troll extends Monster {
 }
 
 // base factory class
-class Barracks {
+class IBarracks {
   constructor() {}
 
   /**
-   * @returns {Monster}
+   * @returns {IMonster}
    */
   createUnit() {
     throw new Error('Not implemented: Barracks.createUnit().');
@@ -72,7 +72,7 @@ class Barracks {
 }
 
 // concrete factory class 1
-class OgreBarracks extends Barracks {
+class OgreBarracks extends IBarracks {
   constructor() {
     super();
   }
@@ -83,7 +83,7 @@ class OgreBarracks extends Barracks {
 }
 
 // concrete factory class 2
-class TrollBarracks extends Barracks {
+class TrollBarracks extends IBarracks {
   constructor() {
     super();
   }
