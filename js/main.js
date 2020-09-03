@@ -1,8 +1,8 @@
 import Playground from './playground.js';
-import FactoryMethod from './patterns/factory-method.js';
-import Builder from './patterns/builder.js';
-import Prototype from './patterns/prototype.js';
-import Singleton from './patterns/singleton.js';
+import FactoryMethod from './patterns/creational/factory-method.js';
+import Builder from './patterns/creational/builder.js';
+import Prototype from './patterns/creational/prototype.js';
+import Singleton from './patterns/creational/singleton.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {

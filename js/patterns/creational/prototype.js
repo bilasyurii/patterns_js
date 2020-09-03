@@ -1,4 +1,4 @@
-import Pattern from "../pattern.js";
+import Pattern from "../../pattern.js";
 
 export default class Prototype extends Pattern {
   constructor(playground) {

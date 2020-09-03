@@ -1,4 +1,4 @@
-import Pattern from "../pattern.js";
+import Pattern from "../../pattern.js";
 
 export default class FactoryMethod extends Pattern {
   constructor(playground) {
