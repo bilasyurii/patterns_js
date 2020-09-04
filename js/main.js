@@ -8,6 +8,7 @@ import Bridge from './patterns/structural/bridge.js';
 import Composite from './patterns/structural/composite.js';
 import Decorator from './patterns/structural/decorator.js';
 import Facade from './patterns/structural/facade.js';
+import Flyweight from './patterns/structural/flyweight.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -118,6 +119,7 @@ const patternClasses = [
   Composite,
   Decorator,
   Facade,
+  Flyweight,
 ];
 
 const config = {
