@@ -34,6 +34,10 @@ export default class Flyweight extends Pattern {
     playground.addParagraph(`Total particle types (flyweights) created: ${ParticleType.getTypesCount()}.`);
     playground.addParagraph(`Total particles (contexts) created: ${particles.length}.`);
   }
+
+  finish() {
+    ParticleType.clean();
+  }
 }
 
 // flyweight
@@ -50,6 +54,10 @@ class ParticleType {
 
   static getTypesCount() {
     return ParticleType._id;
+  }
+
+  static clean() {
+    ParticleType._id = 0;
   }
 }
 

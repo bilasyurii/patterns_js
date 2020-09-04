@@ -22,6 +22,10 @@ export default class Singleton extends Pattern {
 
     textures.forEach((texture) => playground.addParagraph(texture));
   }
+
+  finish() {
+    AssetManager.instance.clean();
+  }
 }
 
 // singleton
@@ -42,6 +46,10 @@ class AssetManager {
 
   getTextures() {
     return this._textures;
+  }
+
+  clean() {
+    this._textures = [];
   }
 
   /**
