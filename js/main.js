@@ -19,6 +19,7 @@ import Observer from './patterns/behavioral/observer.js';
 import State from './patterns/behavioral/state.js';
 import Strategy from './patterns/behavioral/strategy.js';
 import TemplateMethod from './patterns/behavioral/template-method.js';
+import Visitor from './patterns/behavioral/visitor.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -141,6 +142,7 @@ const patternClasses = [
   State,
   Strategy,
   TemplateMethod,
+  Visitor,
 ];
 
 const config = {
