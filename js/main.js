@@ -13,6 +13,7 @@ import Proxy from './patterns/structural/proxy.js';
 import ChainOfResponsibility from './patterns/behavioral/chain-of-responsibility.js';
 import Command from './patterns/behavioral/command.js';
 import Iterator from './patterns/behavioral/iterator.js';
+import Mediator from './patterns/behavioral/mediator.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -129,6 +130,7 @@ const patternClasses = [
   ChainOfResponsibility,
   Command,
   Iterator,
+  Mediator,
 ];
 
 const config = {
