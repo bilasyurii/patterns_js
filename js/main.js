@@ -14,6 +14,7 @@ import ChainOfResponsibility from './patterns/behavioral/chain-of-responsibility
 import Command from './patterns/behavioral/command.js';
 import Iterator from './patterns/behavioral/iterator.js';
 import Mediator from './patterns/behavioral/mediator.js';
+import Memento from './patterns/behavioral/memento.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -131,6 +132,7 @@ const patternClasses = [
   Command,
   Iterator,
   Mediator,
+  Memento,
 ];
 
 const config = {
