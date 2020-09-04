@@ -16,6 +16,7 @@ import Iterator from './patterns/behavioral/iterator.js';
 import Mediator from './patterns/behavioral/mediator.js';
 import Memento from './patterns/behavioral/memento.js';
 import Observer from './patterns/behavioral/observer.js';
+import State from './patterns/behavioral/state.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -135,6 +136,7 @@ const patternClasses = [
   Mediator,
   Memento,
   Observer,
+  State,
 ];
 
 const config = {
