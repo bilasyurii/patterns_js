@@ -11,6 +11,7 @@ import Facade from './patterns/structural/facade.js';
 import Flyweight from './patterns/structural/flyweight.js';
 import Proxy from './patterns/structural/proxy.js';
 import ChainOfResponsibility from './patterns/behavioral/chain-of-responsibility.js';
+import Command from './patterns/behavioral/command.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -125,6 +126,7 @@ const patternClasses = [
   Proxy,
   // Behavioral
   ChainOfResponsibility,
+  Command,
 ];
 
 const config = {
