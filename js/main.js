@@ -9,6 +9,7 @@ import Composite from './patterns/structural/composite.js';
 import Decorator from './patterns/structural/decorator.js';
 import Facade from './patterns/structural/facade.js';
 import Flyweight from './patterns/structural/flyweight.js';
+import Proxy from './patterns/structural/proxy.js';
 
 export default class StartPoint {
   constructor(patternClasses, config) {
@@ -120,6 +121,7 @@ const patternClasses = [
   Decorator,
   Facade,
   Flyweight,
+  Proxy,
 ];
 
 const config = {
