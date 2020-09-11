@@ -8,10 +8,10 @@ export default class Singleton extends Pattern {
   start() {
     const playground = this.playground;
 
-    // first manager to access
+    // first way to access
     const manager = AssetManager.instance;
-    const sameManger = new AssetManager();
     // second way to access
+    const sameManger = new AssetManager();
     
     manager.loadTexture('texture1.png');
     sameManger.loadTexture('texture2.png');
